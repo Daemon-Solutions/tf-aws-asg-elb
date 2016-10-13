@@ -1,16 +1,18 @@
-# tf-aws-asg-elb-log
-This module is based on `tf-aws-asg-elb-log`.  
+# tf-aws-asg-elb
+This module is based on
+[tf-aws-asg-elb-log](https://git.bashton.net/Bashton-Terraform-Modules/tf-aws-asg-elb-log).  
 Auto-scaling with ELB + S3 Logging - Terraform Module
 
 Main difference is that this module allows to provide S3 bucket ID for ELB
-logging
+logging and may be used with
+[tf-aws-elb-log-s3bucket](https://git.bashton.net/Bashton-Terraform-Modules/tf-aws-elb-log-s3bucket)
 
 ## Variables
 * `name` -
 * `owner` -
 * `envname` -
 * `service` - used for tagging and for creating R53 ELB alias
-* `elb_dns - 0|1 (default: 0)
+* `elb_dns` - 0|1 (default: 0)
 * `route53_zone_id` -
 * `domain` -
 * `availability_zones` -
