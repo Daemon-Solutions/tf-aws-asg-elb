@@ -41,7 +41,7 @@ variable "domain" {
 variable "availability_zones" {
   description = "A list of availability zones to span instances across"
   type = "list"
-  default = ["eu-west1-b", "eu-west1-c", "eu-west1-d"]
+  default = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
 }
 
 variable "elb_subnets" {
